@@ -13,10 +13,10 @@ class OptimalChangeTest(unittest.TestCase):
 		self.assertEqual(ChangeMaker(100, 100).optimal_change(), "You've paid with exact change.")
 
 	def test_4(self):
-		self.assertEqual(ChangeMaker(1.00, 0.40).optimal_change(), "The cost is $1.0 and the amount you paid is $0.4. Continue depositng $0.6.")
+		self.assertEqual(ChangeMaker(1.00, 0.40).optimal_change(), "The cost is $1.0 and the amount you paid is $0.4. Continue depositing $0.6.")
 
 	def test_5(self):
-		self.assertEqual(ChangeMaker(0.04, 0.01).optimal_change(), "The optimal change for an item that costs $0.01 with an amount paid of $0.04 is 3 pennies.")
+		self.assertEqual(ChangeMaker(0.01, 0.04).optimal_change(), "The optimal change for an item that costs $0.01 with an amount paid of $0.04 is 3 pennies.")
 
 
 if __name__ == "__main__":
